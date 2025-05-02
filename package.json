@@ -1,8 +1,60 @@
 {
-  "devDependencies": {
-    "parcel": "^2.14.4"
+
+  "name": "mealbox",
+
+  "version": "1.0.0",
+
+  "description": "WElcome to Mealbox",
+
+  "start": "index.html",
+
+  "scripts": {
+
+    "test": "jest"
+
   },
+
+  "repository": {
+
+    "type": "git",
+
+    "url": "git+https://github.com/urmiladubhase/MealBox.git"
+
+  },
+
+  "keywords": [
+
+    "lunch",
+
+    "dinner"
+
+  ],
+
+  "author": "Urmi",
+
+  "license": "ISC",
+
+  "bugs": {
+
+    "url": "https://github.com/urmiladubhase/MealBox/issues"
+
+  },
+
+  "homepage": "https://github.com/urmiladubhase/MealBox#readme",
+
+  "devDependencies": {
+
+    "parcel": "^2.14.4"
+
+  },
+
   "dependencies": {
-    "react": "^19.1.0"
+
+    "react": "^19.1.0",
+
+    "react-dom": "^19.1.0"
+
   }
+
 }
+
