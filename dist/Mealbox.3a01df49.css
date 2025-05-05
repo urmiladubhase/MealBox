@@ -1,2 +1,48 @@
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  display: flex;
+}
 
+.logo {
+  width: 120px;
+}
+
+.navItems > ul {
+  display: flex;
+}
+
+.navItems > ul > li {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.search {
+  padding: 10px;
+}
+
+.Rest-card {
+  background-color: #f0f0f0;
+  width: 200px;
+  height: 300px;
+  padding: 5px;
+}
+
+.Rest-card:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.res-img {
+  width: 100%;
+}
+
+.Rest-container {
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+}
 /*# sourceMappingURL=Mealbox.3a01df49.css.map */
