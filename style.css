@@ -23,13 +23,15 @@ width: 120px;
 }
 
 /*Body*/
+.Bod
 .search{
     padding: 10px;
 }
 .Rest-card{
-padding: 5px;
+padding: 10px;
 width: 200px;
-height: 300px;
+/*height: 350px;*/
+margin: 5px;
 background-color:#f0f0f0;
 }
 .Rest-card:hover{
@@ -38,7 +40,9 @@ background-color:#f0f0f0;
 }
 
 .res-img{
-    width: 100%;
+    width:100%;
+    height: 200px;
+
 }
 
 .Rest-container{

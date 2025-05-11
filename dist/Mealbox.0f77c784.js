@@ -160,7 +160,7 @@
       });
     }
   }
-})({"aj62f":[function(require,module,exports,__globalThis) {
+})({"7wZbQ":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -168,7 +168,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "cb5ea115f72d0d54";
+module.bundle.HMR_BUNDLE_ID = "9440bf780f77c784";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -666,12 +666,12 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"4ZGjQ":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$5fe5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$5fe5.init();
+},{}],"2R06K":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$0bfa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$0bfa.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
 var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5fe5.prelude(module);
+$parcel$ReactRefreshHelpers$0bfa.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -680,20 +680,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-/*
-Header:
--- Logo
---nav bar
-
-Body:
---search bar
---Restaurant container
---Food cards
-
-Footer:
---copyright
---contact
-*/ const Header = ()=>{
+const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: [
@@ -703,13 +690,13 @@ Footer:
                     className: "logo",
                     src: "https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&sf=&txt_keyword=All"
                 }, void 0, false, {
-                    fileName: "app.js",
-                    lineNumber: 21,
+                    fileName: "src/app.js",
+                    lineNumber: 8,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
-                fileName: "app.js",
-                lineNumber: 20,
+                fileName: "src/app.js",
+                lineNumber: 7,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -719,110 +706,110 @@ Footer:
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Home"
                         }, void 0, false, {
-                            fileName: "app.js",
-                            lineNumber: 26,
+                            fileName: "src/app.js",
+                            lineNumber: 13,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About Us"
                         }, void 0, false, {
-                            fileName: "app.js",
-                            lineNumber: 27,
+                            fileName: "src/app.js",
+                            lineNumber: 14,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "contact"
                         }, void 0, false, {
-                            fileName: "app.js",
-                            lineNumber: 28,
+                            fileName: "src/app.js",
+                            lineNumber: 15,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
-                            fileName: "app.js",
-                            lineNumber: 29,
+                            fileName: "src/app.js",
+                            lineNumber: 16,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
-                    fileName: "app.js",
-                    lineNumber: 25,
+                    fileName: "src/app.js",
+                    lineNumber: 12,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
-                fileName: "app.js",
-                lineNumber: 24,
+                fileName: "src/app.js",
+                lineNumber: 11,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "app.js",
-        lineNumber: 19,
+        fileName: "src/app.js",
+        lineNumber: 6,
         columnNumber: 9
     }, undefined);
 };
 _c = Header;
 const RestaurantCard = (props)=>{
     const { resData } = props;
-    const { name, cusine, avgRating, costForTwo, deliveryTime } = resData?.data; //This is functional chaining we are optimizing the code
+    const { name, cuisines, avgRatingString = "0", costForTwo = "0", deliveryTime } = resData?.info; //This is functional chaining we are optimizing the code
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "Rest-card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 alt: "food-img",
                 className: "res-img",
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.data.imgId
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.info.cloudinaryImageId
             }, void 0, false, {
-                fileName: "app.js",
-                lineNumber: 44,
+                fileName: "src/app.js",
+                lineNumber: 33,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: name
             }, void 0, false, {
-                fileName: "app.js",
-                lineNumber: 45,
+                fileName: "src/app.js",
+                lineNumber: 34,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: cusine.join(",")
+                children: cuisines
             }, void 0, false, {
-                fileName: "app.js",
-                lineNumber: 46,
+                fileName: "src/app.js",
+                lineNumber: 35,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: [
-                    avgRating,
+                    avgRatingString,
                     " Stars"
                 ]
             }, void 0, true, {
-                fileName: "app.js",
-                lineNumber: 47,
+                fileName: "src/app.js",
+                lineNumber: 36,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: costForTwo / 100
+                children: costForTwo
             }, void 0, false, {
-                fileName: "app.js",
-                lineNumber: 48,
+                fileName: "src/app.js",
+                lineNumber: 37,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: [
-                    deliveryTime,
-                    " Minutes"
+                    avgRatingString,
+                    "Minutes"
                 ]
             }, void 0, true, {
-                fileName: "app.js",
-                lineNumber: 49,
+                fileName: "src/app.js",
+                lineNumber: 38,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "app.js",
-        lineNumber: 43,
+        fileName: "src/app.js",
+        lineNumber: 32,
         columnNumber: 9
     }, undefined);
 };
@@ -830,154 +817,1486 @@ _c1 = RestaurantCard;
 // Data will be the list of objects so we can use it as array 
 const resList = [
     {
-        id: "res1",
-        type: "restaurant",
-        data: {
-            name: "YNT-Guilty Grilled",
-            cusine: [
-                " Fast Food",
-                " Chinese"
-            ],
-            avgRating: "4.2",
-            costForTwo: 15000,
-            deliveryTime: 36,
-            imgId: "7368ed44662f4da5852b1c883f60a08e"
-        }
-    },
-    {
-        id: "res2",
-        type: "restaurant",
-        data: {
-            name: "Sky Pizza",
-            cusine: [
+        "info": {
+            "id": "745868",
+            "name": "Olio - The Wood Fired Pizzeria",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/21/afe4185f-6194-44d7-a534-9e6887bfa1a7_745868.jpg",
+            "locality": "Hinjawadi",
+            "areaName": "Haveli",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
                 "Pizzas",
-                " Fast Food",
-                " Dessert"
+                "Pastas",
+                "Italian",
+                "Fast Food",
+                "Snacks",
+                "Beverages",
+                "Desserts"
             ],
-            avgRating: "4.5",
-            costForTwo: 20000,
-            deliveryTime: 40,
-            imgId: "f75ce42e9d9c9c3810af9a84bc04a433"
+            "avgRating": 4.2,
+            "parentId": "11633",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "2.9K+",
+            "sla": {
+                "deliveryTime": 29,
+                "lastMileTravel": 0.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "0.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "newg.png",
+                        "description": "Gourmet"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Gourmet",
+                                    "imageId": "newg.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B9179"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "3.3",
+                    "ratingCount": "3"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/olio-the-wood-fired-pizzeria-hinjawadi-haveli-rest745868",
+            "type": "WEBLINK"
         }
     },
     {
-        id: "res3",
-        type: "restaurant",
-        data: {
-            name: "Homly Food",
-            cusine: [
-                " Indian",
-                " Paratha"
+        "info": {
+            "id": "2053",
+            "name": "RushHrs",
+            "cloudinaryImageId": "ueiq0zh6dfn38hagze3d",
+            "locality": "Baner",
+            "areaName": "Baner",
+            "costForTwo": "\u20B9250 for two",
+            "cuisines": [
+                "Burgers",
+                "American",
+                "Salads",
+                "Fast Food",
+                "Desserts"
             ],
-            avgRating: "4.4",
-            costForTwo: 10000,
-            deliveryTime: 30,
-            imgId: "98afe36f30a1f5463aa9911b56859855"
+            "avgRating": 4.5,
+            "parentId": "791",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "25K+",
+            "sla": {
+                "deliveryTime": 24,
+                "lastMileTravel": 6.6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "6.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 07:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B9139"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "3.9",
+                    "ratingCount": "340"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/rushhrs-baner-rest2053",
+            "type": "WEBLINK"
         }
     },
     {
-        id: "res4",
-        type: "restaurant",
-        data: {
-            name: "Call me Chao",
-            cusine: [
+        "info": {
+            "id": "368031",
+            "name": "Tossin Pizza",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/3/29/fb5a8127-edc4-4fba-9fda-53c1f964774b_368031.jpg",
+            "locality": "Baner",
+            "areaName": "Baner",
+            "costForTwo": "\u20B9600 for two",
+            "cuisines": [
+                "Italian"
+            ],
+            "avgRating": 4.3,
+            "parentId": "1778",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "2.3K+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 5.9,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-35 mins",
+                "lastMileTravelString": "5.9 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "newg.png",
+                        "description": "Gourmet"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Gourmet",
+                                    "imageId": "newg.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO \u20B9120"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.3",
+                    "ratingCount": "367"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/tossin-pizza-baner-rest368031",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "884157",
+            "name": "Good Flippin' Burgers",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/8/9/ea29b41a-a3c9-478e-b03b-e17a38486725_884157.JPG",
+            "locality": "Chinchwad",
+            "areaName": "PCMC",
+            "costForTwo": "\u20B9600 for two",
+            "cuisines": [
+                "Burgers",
+                "American",
+                "Fast Food"
+            ],
+            "avgRating": 4.5,
+            "parentId": "11748",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "1.2K+",
+            "sla": {
+                "deliveryTime": 43,
+                "lastMileTravel": 6.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "40-45 mins",
+                "lastMileTravelString": "6.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Burger.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Burger.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B9195"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/good-flippin-burgers-chinchwad-pcmc-rest884157",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "323673",
+            "name": "WarmOven Cake & Desserts",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/29/d44b4cae-5218-49a6-8e55-76e44f3b0235_323673.JPG",
+            "locality": "Bhujbal Wasti",
+            "areaName": "Wakad",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Bakery",
+                "Desserts",
+                "Ice Cream",
+                "Beverages",
+                "Cakes"
+            ],
+            "avgRating": 4.1,
+            "parentId": "9696",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "3.5K+",
+            "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO \u20B9100"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/warmoven-cake-and-desserts-bhujbal-wasti-wakad-rest323673",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "487735",
+            "name": "Momo Zone - The Momo Company",
+            "cloudinaryImageId": "c8zrpirxqdgytpz8b2mp",
+            "locality": "Bhujbal Wasti",
+            "areaName": "Wakad",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
                 "Chinese",
-                "PAN Asian"
+                "Tibetan",
+                "Fast Food",
+                "Momos"
             ],
-            avgRating: "4.3",
-            costForTwo: 10000,
-            deliveryTime: 29,
-            imgId: "gyreycu8yzo394ktluiq"
+            "avgRating": 3.5,
+            "parentId": "382343",
+            "avgRatingString": "3.5",
+            "totalRatingsString": "211",
+            "sla": {
+                "deliveryTime": 35,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO \u20B9100"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/momo-zone-the-momo-company-bhujbal-wasti-wakad-rest487735",
+            "type": "WEBLINK"
         }
     },
     {
-        id: "res5",
-        type: "restaurant",
-        data: {
-            name: "Zaika Biryani",
-            cusine: [
-                "Biryani"
+        "info": {
+            "id": "202642",
+            "name": "Irani Cafe",
+            "cloudinaryImageId": "tfsksql6wnebha3zcttj",
+            "locality": "Laxman Nagar",
+            "areaName": "Baner",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Bakery",
+                "Snacks",
+                "Fast Food",
+                "Desserts",
+                "Beverages",
+                "Indian",
+                "Street Food"
             ],
-            avgRating: "3.3",
-            costForTwo: 20000,
-            deliveryTime: 45,
-            imgId: "3307572a9163ecd1e400fe59c303c499"
+            "avgRating": 4.5,
+            "parentId": "4057",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "23K+",
+            "sla": {
+                "deliveryTime": 23,
+                "lastMileTravel": 5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "5.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:59:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Cafe%20&%20Chai.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/irani-cafe-laxman-nagar-baner-rest202642",
+            "type": "WEBLINK"
         }
     },
     {
-        id: "res6",
-        type: "restaurant",
-        data: {
-            name: "Momo Joint",
-            cusine: [
-                " Momo",
-                "Fastfood",
-                "Tibetian"
+        "info": {
+            "id": "344827",
+            "name": "Starboy Pizza & Shakes",
+            "cloudinaryImageId": "gy01da9wdhrda8uorlvx",
+            "locality": "Dasara chowk",
+            "areaName": "Balewadi",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "Pizzas",
+                "Italian",
+                "Fast Food",
+                "Snacks",
+                "Desserts",
+                "Beverages"
             ],
-            avgRating: "4.7",
-            costForTwo: 19900,
-            deliveryTime: 25,
-            imgId: "b3zqpddp6gd78o4wxhzu"
+            "avgRating": 3.9,
+            "parentId": "195514",
+            "avgRatingString": "3.9",
+            "totalRatingsString": "743",
+            "sla": {
+                "deliveryTime": 31,
+                "lastMileTravel": 6.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "6.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/starboy-pizza-and-shakes-dasara-chowk-balewadi-rest344827",
+            "type": "WEBLINK"
         }
     },
     {
-        id: "res7",
-        type: "restaurant",
-        data: {
-            name: "Dessert World",
-            cusine: [
-                "Cakes",
-                " Snaks",
-                "Icecream"
+        "info": {
+            "id": "745870",
+            "name": "Crusto's - Cheese Burst Pizza By Olio",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/26/f54d970e-4e15-449a-9952-42f55f21b48f_745870.jpg",
+            "locality": "Wakad Road",
+            "areaName": "Haveli",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "Pizzas",
+                "Pastas",
+                "Italian",
+                "Fast Food",
+                "Snacks",
+                "Beverages",
+                "Desserts"
             ],
-            avgRating: "4.6",
-            costForTwo: 10000,
-            deliveryTime: 20,
-            imgId: "g79hwvvtkzjw06f1rrzy"
+            "avgRating": 4.3,
+            "parentId": "268955",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "300",
+            "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 0.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "0.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B9274"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/crustos-cheese-burst-pizza-by-olio-wakad-road-haveli-rest745870",
+            "type": "WEBLINK"
         }
     },
     {
-        id: "res8",
-        type: "restaurant",
-        data: {
-            name: "Dosa Story",
-            cusine: [
-                "South Indian",
-                " Dosa"
+        "info": {
+            "id": "323666",
+            "name": "Cupcake Bliss Cake & Desserts",
+            "cloudinaryImageId": "40f193d8b23afb2988489dac1258962f",
+            "locality": "Bhujbal Wasti",
+            "areaName": "Wakad",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Bakery",
+                "Desserts",
+                "Ice Cream",
+                "Beverages",
+                "Cakes"
             ],
-            avgRating: "4.3",
-            costForTwo: 7000,
-            deliveryTime: 29,
-            imgId: "FOOD_CATALOG/IMAGES/CMS/2025/1/27/46796f84-5be4-433a-95b4-7eb87fcadbd5_def91265-3a3a-4bc4-a78b-0562e4c8f9e2.jpg"
+            "avgRating": 3.8,
+            "parentId": "66732",
+            "avgRatingString": "3.8",
+            "totalRatingsString": "1.0K+",
+            "sla": {
+                "deliveryTime": 33,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO \u20B9100"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/cupcake-bliss-cake-and-desserts-bhujbal-wasti-wakad-rest323666",
+            "type": "WEBLINK"
         }
     },
     {
-        id: "res9",
-        type: "restaurant",
-        data: {
-            name: "Wadewale",
-            cusine: [
-                "Maharastrian"
+        "info": {
+            "id": "35790",
+            "name": "The Belgian Waffle Co.",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/17/d8ebf51c-c824-48f4-abce-71cb12649b57_35790.JPG",
+            "locality": "Bibwewadi",
+            "areaName": "Balewadi",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Waffle",
+                "Desserts",
+                "Ice Cream",
+                "Beverages"
             ],
-            avgRating: "4.7",
-            costForTwo: 5000,
-            deliveryTime: 15,
-            imgId: "FOOD_CATALOG/IMAGES/CMS/2024/6/18/681b686a-9b7b-413b-9b67-4a978d5692a4_b282b55e-1e06-4283-aca4-46acc5b3ef1d.jpeg"
+            "avgRating": 4.7,
+            "veg": true,
+            "parentId": "2233",
+            "avgRatingString": "4.7",
+            "totalRatingsString": "9.1K+",
+            "sla": {
+                "deliveryTime": 34,
+                "lastMileTravel": 6.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "6.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 06:55:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Desserts.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Desserts.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.3",
+                    "ratingCount": "1.1K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/the-belgian-waffle-co-bibwewadi-balewadi-rest35790",
+            "type": "WEBLINK"
         }
     },
     {
-        id: "res10",
-        type: "restaurant",
-        data: {
-            name: "Roll ON",
-            cusine: [
-                "Rolls",
-                "Indian"
+        "info": {
+            "id": "30642",
+            "name": "Cheesiano Pizza",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/11/2e54d4cb-ddfb-48f4-935c-ef7fcb636459_30642.jpg",
+            "locality": "Wakad",
+            "areaName": "Wakad",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "Pizzas",
+                "Pastas",
+                "Burgers",
+                "Fast Food",
+                "Desserts",
+                "Beverages"
             ],
-            avgRating: "4.4",
-            costForTwo: 10000,
-            deliveryTime: 30,
-            imgId: "mxyfzubjnba2smi6fpfr"
+            "avgRating": 4.1,
+            "parentId": "59203",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "8.8K+",
+            "sla": {
+                "deliveryTime": 37,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.0",
+                    "ratingCount": "1.0K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/cheesiano-pizza-wakad-rest30642",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "233324",
+            "name": "Burger King",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/24/16d8f552-3a80-4249-91d2-abc9247a7a41_233324.jpg",
+            "locality": "Pimple Saudagar",
+            "areaName": "Rahatani",
+            "costForTwo": "\u20B9350 for two",
+            "cuisines": [
+                "Burgers",
+                "American"
+            ],
+            "avgRating": 4.3,
+            "parentId": "166",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "25K+",
+            "sla": {
+                "deliveryTime": 45,
+                "lastMileTravel": 6.1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "45-50 mins",
+                "lastMileTravelString": "6.1 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B9139"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "4.4",
+                    "ratingCount": "1.7K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/burger-king-pimple-saudagar-rahatani-rest233324",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "9025",
+            "name": "Baskin Robbins - Ice Cream Desserts",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/24/32cc1430-0f75-49f6-9789-bee65aaffd7f_9025.JPG",
+            "locality": "Shankar Kalat Nagar",
+            "areaName": "Wakad",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Ice Cream",
+                "Desserts"
+            ],
+            "avgRating": 4.6,
+            "veg": true,
+            "parentId": "5588",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "5.4K+",
+            "sla": {
+                "deliveryTime": 26,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Ratnesh_Badges/Rx_Awards_2025/Icecream.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Ratnesh_Badges/Rx_Awards_2025/Icecream.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO \u20B9100"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/baskin-robbins-ice-cream-desserts-shankar-kalat-nagar-wakad-rest9025",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "687127",
+            "name": "Pizza Hut",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/9/95c71231-fe75-4905-9d2f-5c0ed67d4141_687127.jpg",
+            "locality": "PCMC ward",
+            "areaName": "Pimple Nilakh",
+            "costForTwo": "\u20B9350 for two",
+            "cuisines": [
+                "Pizzas"
+            ],
+            "avgRating": 4.1,
+            "parentId": "721",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "1.0K+",
+            "sla": {
+                "deliveryTime": 44,
+                "lastMileTravel": 5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "40-45 mins",
+                "lastMileTravelString": "5.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "Rxawards/_CATEGORY-Pizza.png",
+                        "description": "Delivery!"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "Delivery!",
+                                    "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT \u20B979"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/pizza-hut-pcmc-ward-pimple-nilakh-rest687127",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "800913",
+            "name": "Kwality Walls Ice Cream and More",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/13/d69f8ada-159b-4e33-a2ae-66767e2ac43f_800913.JPG",
+            "locality": "Bappa Residency",
+            "areaName": "Hinjewadi",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Ice Cream",
+                "Desserts",
+                "Ice Cream Cakes"
+            ],
+            "avgRating": 4.5,
+            "veg": true,
+            "parentId": "582",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "222",
+            "sla": {
+                "deliveryTime": 18,
+                "lastMileTravel": 0.6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15-20 mins",
+                "lastMileTravelString": "0.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 11:58:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png",
+                        "description": "bolt!"
+                    },
+                    {
+                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                        "description": "pureveg"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "bolt!",
+                                    "imageId": "bolt/big%20rx%20listing%2015%20mins%20.png"
+                                }
+                            },
+                            {
+                                "attributes": {
+                                    "description": "pureveg",
+                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "\u20B9150 OFF",
+                "subHeader": "ABOVE \u20B9399",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/kwality-walls-ice-cream-and-more-bappa-residency-hinjewadi-rest800913",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "16970",
+            "name": "Mad Momos",
+            "cloudinaryImageId": "qswrojfwttgslmy8n4cn",
+            "locality": "Guru Krupa Colony",
+            "areaName": "Guru Krupa Colony",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "Chinese",
+                "Tibetan",
+                "Nepalese",
+                "Pizzas",
+                "Snacks",
+                "Beverages"
+            ],
+            "avgRating": 3.7,
+            "parentId": "610",
+            "avgRatingString": "3.7",
+            "totalRatingsString": "30K+",
+            "sla": {
+                "deliveryTime": 37,
+                "lastMileTravel": 5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "5.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 06:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "\u20B9125 OFF",
+                "subHeader": "ABOVE \u20B9249",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/mad-momos-guru-krupa-colony-rest16970",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "323668",
+            "name": "Kaati Zone Rolls & Wraps",
+            "cloudinaryImageId": "reykt14ijxya20zbpiud",
+            "locality": "Bhujbal Wasti",
+            "areaName": "Wakad",
+            "costForTwo": "\u20B9150 for two",
+            "cuisines": [
+                "Fast Food",
+                "Bengali",
+                "Beverages",
+                "Desserts",
+                "Rolls"
+            ],
+            "avgRating": 3.4,
+            "parentId": "248306",
+            "avgRatingString": "3.4",
+            "totalRatingsString": "762",
+            "sla": {
+                "deliveryTime": 39,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35-40 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {
+                "textExtendedBadges": [
+                    {
+                        "iconId": "guiltfree/GF_Logo_android_3x",
+                        "shortDescription": "options available",
+                        "fontColor": "#7E808C"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "",
+                                    "fontColor": "#7E808C",
+                                    "iconId": "guiltfree/GF_Logo_android_3x",
+                                    "shortDescription": "options available"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO \u20B9100"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/kaati-zone-rolls-and-wraps-bhujbal-wasti-wakad-rest323668",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "831225",
+            "name": "Pastas By Pizza Hut",
+            "cloudinaryImageId": "dce75bf0d124fb1fa390597828d8ffd9",
+            "locality": "Shankar Kalat Nagar",
+            "areaName": "Wakad",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Pastas"
+            ],
+            "avgRating": 3.8,
+            "parentId": "306806",
+            "avgRatingString": "3.8",
+            "totalRatingsString": "16",
+            "sla": {
+                "deliveryTime": 41,
+                "lastMileTravel": 3.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "40-45 mins",
+                "lastMileTravelString": "3.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2025-05-09 05:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {},
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+        },
+        "analytics": {
+            "context": "seo-data-35572049-8f4a-4cbe-8863-e73fc9ccf95a"
+        },
+        "cta": {
+            "link": "https://www.swiggy.com/city/pune/pastas-by-pizza-hut-shankar-kalat-nagar-wakad-rest831225",
+            "type": "WEBLINK"
         }
     }
 ];
@@ -994,28 +2313,28 @@ const Body = ()=>{
                 className: "search",
                 children: " Search"
             }, void 0, false, {
-                fileName: "app.js",
-                lineNumber: 196,
+                fileName: "src/app.js",
+                lineNumber: 1822,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "Rest-container",
                 children: resList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
                         resData: restaurant
-                    }, restaurant.id, false, {
-                        fileName: "app.js",
-                        lineNumber: 200,
+                    }, restaurant.info.id, false, {
+                        fileName: "src/app.js",
+                        lineNumber: 1826,
                         columnNumber: 46
                     }, undefined))
             }, void 0, false, {
-                fileName: "app.js",
-                lineNumber: 197,
+                fileName: "src/app.js",
+                lineNumber: 1823,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "app.js",
-        lineNumber: 195,
+        fileName: "src/app.js",
+        lineNumber: 1821,
         columnNumber: 9
     }, undefined);
 };
@@ -1025,27 +2344,27 @@ const AppLayout = ()=>{
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
-                fileName: "app.js",
-                lineNumber: 209,
+                fileName: "src/app.js",
+                lineNumber: 1835,
                 columnNumber: 11
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
-                fileName: "app.js",
-                lineNumber: 210,
+                fileName: "src/app.js",
+                lineNumber: 1836,
                 columnNumber: 11
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "app.js",
-        lineNumber: 208,
+        fileName: "src/app.js",
+        lineNumber: 1834,
         columnNumber: 9
     }, undefined);
 };
 _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
-    fileName: "app.js",
-    lineNumber: 216,
+    fileName: "src/app.js",
+    lineNumber: 1842,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
@@ -1054,7 +2373,7 @@ $RefreshReg$(_c1, "RestaurantCard");
 $RefreshReg$(_c2, "Body");
 $RefreshReg$(_c3, "AppLayout");
 
-  $parcel$ReactRefreshHelpers$5fe5.postlude(module);
+  $parcel$ReactRefreshHelpers$0bfa.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
@@ -18766,6 +20085,6 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["aj62f","4ZGjQ"], "4ZGjQ", "parcelRequirecade", {}, null, null, "http://localhost:1234")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["7wZbQ","2R06K"], "2R06K", "parcelRequirecade", {}, null, null, "http://localhost:1234")
 
-//# sourceMappingURL=Mealbox.f72d0d54.js.map
+//# sourceMappingURL=Mealbox.0f77c784.js.map

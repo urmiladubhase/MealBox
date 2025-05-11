@@ -19,15 +19,15 @@
   list-style-type: none;
 }
 
-.search {
+.Bod .search {
   padding: 10px;
 }
 
 .Rest-card {
   background-color: #f0f0f0;
   width: 200px;
-  height: 300px;
-  padding: 5px;
+  margin: 5px;
+  padding: 10px;
 }
 
 .Rest-card:hover {
@@ -37,6 +37,7 @@
 
 .res-img {
   width: 100%;
+  height: 200px;
 }
 
 .Rest-container {
