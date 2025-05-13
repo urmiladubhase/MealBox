@@ -23,7 +23,10 @@ width: 120px;
 }
 
 /*Body*/
-.Bod
+.body{
+    margin: 60px;
+}
+
 .search{
     padding: 10px;
 }
