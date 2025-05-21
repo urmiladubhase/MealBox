@@ -19,7 +19,16 @@
   list-style-type: none;
 }
 
-.Bod .search {
+.body {
+  margin: 60px;
+}
+
+.filter-btn {
+  margin: top 5px;
+  cursor: pointer;
+}
+
+.search {
   padding: 10px;
 }
 
@@ -46,4 +55,4 @@
   padding: 5px;
   display: flex;
 }
-/*# sourceMappingURL=Mealbox.3a01df49.css.map */
+/*# sourceMappingURL=MealBox.3a01df49.css.map */

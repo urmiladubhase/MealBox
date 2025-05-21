@@ -9,7 +9,7 @@
   "start": "index.html",
 
   "scripts": {
-
+    "start": "parcel index.html",
     "test": "jest"
 
   },
