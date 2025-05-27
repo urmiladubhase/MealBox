@@ -1,14 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/header";
-import Body from "./components/body"
+import Body from "./components/Body.js"
 
 
 // Data will be the list of objects so we can use it as array 
-
-
-
-
 const AppLayout = () => {
     return (
         <div className="app">

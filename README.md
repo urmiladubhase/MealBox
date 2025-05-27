@@ -129,3 +129,90 @@ resList Data By me:
 
         }
     },
+
+
+
+
+
+    <div className="Rest-container">
+
+            {
+                resList.map((restaurant) => (<RestaurantCard key={restaurant.info.id} resData={restaurant}/>))
+            }      
+            </div>
+
+
+            Data used in filter function:
+
+            {
+                    info: {
+                      id: "2053",
+                      name: "RushHrs",
+                      cloudinaryImageId: "ueiq0zh6dfn38hagze3d",
+                      costForTwo: "₹250 for two",
+                      cuisines: [
+                        "Burgers",
+                        "American",
+                        "Salads",
+                        "Fast Food",
+                        "Desserts"
+                      ],
+                       avgRatingString: "4.5",
+                       deliveryTime: "30",
+                    },
+    
+                },
+                 {
+                    info: {
+                      id: "2054",
+                      name: "MCD",
+                      cloudinaryImageId: "ueiq0zh6dfn38hagze3d",
+                      costForTwo: "₹250 for two",
+                      cuisines: [
+                        "Burgers",
+                        "American",
+                        "Salads",
+                        "Fast Food",
+                        "Desserts"
+                      ],
+                       avgRatingString: "3.9",
+                       deliveryTime: "30",
+                    },
+    
+                },
+                {
+                    info: {
+                      id: "2055",
+                      name: "RushHrs",
+                      cloudinaryImageId: "ueiq0zh6dfn38hagze3d",
+                      costForTwo: "₹250 for two",
+                      cuisines: [
+                        "Burgers",
+                        "American",
+                        "Salads",
+                        "Fast Food",
+                        "Desserts"
+                      ],
+                       avgRatingString: "4.5",
+                       deliveryTime: "30",
+                    },
+    
+                },
+                {
+                    info: {
+                      id: "2056",
+                      name: "RushHrs",
+                      cloudinaryImageId: "ueiq0zh6dfn38hagze3d",
+                      costForTwo: "₹250 for two",
+                      cuisines: [
+                        "Burgers",
+                        "American",
+                        "Salads",
+                        "Fast Food",
+                        "Desserts"
+                      ],
+                       avgRatingString: 4.3,
+                       deliveryTime: "30",
+                    },
+    
+                },

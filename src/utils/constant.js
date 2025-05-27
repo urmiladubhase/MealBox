@@ -3,7 +3,7 @@ export const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_l
 
 export const LOGO_URL = "https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&sf=&txt_keyword=All"
 
-let resList = [
+export const resList = [
     {
         "info": {
                       "id": "745868",
@@ -122,7 +122,7 @@ let resList = [
                         "Fast Food",
                         "Desserts"
                       ],
-                      "avgRating": 4.5,
+                      avgRating: 4.5,
                       "parentId": "791",
                       "avgRatingString": "4.5",
                       "totalRatingsString": "25K+",
@@ -1769,4 +1769,3 @@ let resList = [
 
 ];
 
-export default resList;

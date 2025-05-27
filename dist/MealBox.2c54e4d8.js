@@ -682,8 +682,8 @@ var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 var _header = require("./components/header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
-var _body = require("./components/body");
-var _bodyDefault = parcelHelpers.interopDefault(_body);
+var _bodyJs = require("./components/Body.js");
+var _bodyJsDefault = parcelHelpers.interopDefault(_bodyJs);
 // Data will be the list of objects so we can use it as array 
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -691,18 +691,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 15,
+                lineNumber: 11,
                 columnNumber: 11
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 16,
+                lineNumber: 12,
                 columnNumber: 11
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 14,
+        lineNumber: 10,
         columnNumber: 9
     }, undefined);
 };
@@ -710,7 +710,7 @@ _c = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 22,
+    lineNumber: 18,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -721,7 +721,7 @@ $RefreshReg$(_c, "AppLayout");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./components/header":"be1w4","./components/body":"lBb9z","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./components/header":"be1w4","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./components/Body.js":"loQlg"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -16217,9 +16217,10 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
 parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
+parcelHelpers.export(exports, "resList", ()=>resList);
 const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 const LOGO_URL = "https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=fast-food&sf=&txt_keyword=All";
-let resList = [
+const resList = [
     {
         "info": {
             "id": "745868",
@@ -16326,7 +16327,7 @@ let resList = [
                 "Fast Food",
                 "Desserts"
             ],
-            "avgRating": 4.5,
+            avgRating: 4.5,
             "parentId": "791",
             "avgRatingString": "4.5",
             "totalRatingsString": "25K+",
@@ -17704,7 +17705,6 @@ let resList = [
         }
     }
 ];
-exports.default = resList;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
@@ -20014,27 +20014,30 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lBb9z":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$997b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$997b.init();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"loQlg":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$8a58 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$8a58.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
 var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$997b.prelude(module);
+$parcel$ReactRefreshHelpers$8a58.prelude(module);
 
 try {
-// to change the card data dynamically we can use the props to the function as properties. 
-// when we pass any data dynamically we can pass it through the props
+//To change the card data dynamically we can use the props to the function as properties. 
+//When we pass any data dynamically we can pass it through the props
 //So its like an arguments pass to the function e.g. Function(args, args)
-// Propps is just a javascript object
-//config driven UI
+//Propps is just a javascript object
+//Config driven UI
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _restaurantcard = require("./Restaurantcard");
 var _restaurantcardDefault = parcelHelpers.interopDefault(_restaurantcard);
+var _react = require("react");
 var _constant = require("../utils/constant");
-var _constantDefault = parcelHelpers.interopDefault(_constant);
+var _s = $RefreshSig$();
 const Body = ()=>{
+    _s();
+    const [restaurantList, setRestaurantList] = (0, _react.useState)((0, _constant.resList));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
@@ -20043,57 +20046,55 @@ const Body = ()=>{
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     className: "filter-btn",
                     onClick: ()=>{
-                        resList = (0, _constantDefault.default).filter((res)=>res.info.avgRatingString > 4);
-                        setRestaurantList((0, _constantDefault.default));
+                        //filter  logic
+                        const rest = restaurantList.filter((restaurant)=>restaurant.info.avgRating > 4);
+                        console.log(rest);
+                        setRestaurantList(rest);
                     },
                     children: "Rated Restaurant"
                 }, void 0, false, {
-                    fileName: "src/components/body.js",
-                    lineNumber: 14,
+                    fileName: "src/components/Body.js",
+                    lineNumber: 19,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/components/body.js",
-                lineNumber: 13,
+                fileName: "src/components/Body.js",
+                lineNumber: 18,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "Rest-container",
-                children: (0, _constantDefault.default).map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantcardDefault.default), {
+                children: restaurantList.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantcardDefault.default), {
                         resData: restaurant
                     }, restaurant.info.id, false, {
-                        fileName: "src/components/body.js",
-                        lineNumber: 23,
-                        columnNumber: 46
+                        fileName: "src/components/Body.js",
+                        lineNumber: 32,
+                        columnNumber: 53
                     }, undefined))
             }, void 0, false, {
-                fileName: "src/components/body.js",
-                lineNumber: 20,
+                fileName: "src/components/Body.js",
+                lineNumber: 29,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/body.js",
-        lineNumber: 12,
+        fileName: "src/components/Body.js",
+        lineNumber: 17,
         columnNumber: 9
     }, undefined);
 };
+_s(Body, "aoZLcAiHrqyOa3wqnh7MsG4p5yA=");
 _c = Body;
-/*onClick = { () => {
-                    resList = resList.filter(() => resList.info.avgRating > 4);
-                    console.log("onclick");
-                }
-                }
-*/ exports.default = Body;
+exports.default = Body;
 var _c;
 $RefreshReg$(_c, "Body");
 
-  $parcel$ReactRefreshHelpers$997b.postlude(module);
+  $parcel$ReactRefreshHelpers$8a58.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./Restaurantcard":"27PS5","../utils/constant":"2QBK6","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"27PS5":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","./Restaurantcard":"27PS5","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../utils/constant":"2QBK6"}],"27PS5":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$8eb9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$8eb9.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -20107,7 +20108,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constant = require("../utils/constant");
 const RestaurantCard = (props)=>{
     const { resData } = props;
-    const { name, cuisines, avgRatingString = "0", costForTwo = "0", deliveryTime } = resData?.info; //This is functional chaining we are optimizing the code
+    const { name, cuisines, avgRating, costForTwo = "0", deliveryTime } = resData?.info; //This is functional chaining we are optimizing the code
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "Rest-card",
         children: [
@@ -20136,7 +20137,7 @@ const RestaurantCard = (props)=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: [
-                    avgRatingString,
+                    avgRating,
                     " Stars"
                 ]
             }, void 0, true, {
@@ -20153,7 +20154,7 @@ const RestaurantCard = (props)=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: [
-                    avgRatingString,
+                    deliveryTime,
                     "Minutes"
                 ]
             }, void 0, true, {
