@@ -5,7 +5,9 @@ const RestaurantCard = (props) =>{
 
     
     const {resData}=props;
-    const {name,cuisines,avgRating,costForTwo="0",deliveryTime}=resData?.info; //This is functional chaining we are optimizing the code
+
+    const {name,cuisines,avgRating,costForTwo="0"}=resData?.info; //This is functional chaining we are optimizing the code
+    const deliveryTime = resData.info.sla?.deliveryTime ?? "N/A"; //on this logic we can check how data works
     return(
         
         <div className="Rest-card">
@@ -14,7 +16,7 @@ const RestaurantCard = (props) =>{
             <h4>{cuisines}</h4>
             <h4>{avgRating} Stars</h4>
             <h4>{costForTwo}</h4>
-            <h4>{deliveryTime}Minutes</h4>
+            <h4>{deliveryTime} Minutes</h4>
 
         </div>
     );

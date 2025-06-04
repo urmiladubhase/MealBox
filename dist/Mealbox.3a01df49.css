@@ -19,13 +19,23 @@
   list-style-type: none;
 }
 
+.login {
+  cursor: pointer;
+  padding: 0 20px;
+}
+
 .body {
-  margin: 60px;
+  margin: 15px;
+}
+
+.Filter {
+  margin: 15px;
+  display: flex;
 }
 
 .filter-btn {
-  margin: top 5px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .search {
@@ -49,10 +59,18 @@
   height: 200px;
 }
 
-.Rest-container {
+.Rest-container, .shimmer-container {
   flex-wrap: wrap;
   margin: 5px;
   padding: 5px;
   display: flex;
+}
+
+.shimmer-card {
+  background-color: #f0f0f0;
+  width: 200px;
+  height: 350px;
+  margin: 5px;
+  padding: 10px;
 }
 /*# sourceMappingURL=MealBox.3a01df49.css.map */
