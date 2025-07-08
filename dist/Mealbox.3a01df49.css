@@ -8,6 +8,11 @@
   width: 120px;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 .navItems > ul {
   display: flex;
 }
@@ -72,5 +77,9 @@
   height: 350px;
   margin: 5px;
   padding: 10px;
+}
+
+.res-img-menu {
+  margin: 10px 0;
 }
 /*# sourceMappingURL=MealBox.3a01df49.css.map */

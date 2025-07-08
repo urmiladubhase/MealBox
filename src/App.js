@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider, out, Outlet} from "react-router-do
 import { Contact } from "./components/Contact.js";
 import { Error } from "./components/Error.js";  
 import {About} from "./components/About.js";
+import CardMenu from "./components/cardMenu.js";
+// import './style.css';
 
 // Data will be the list of objects so we can use it as array 
 const AppLayout = () => {
@@ -36,6 +38,11 @@ const appRouter = createBrowserRouter([
     {
        path: "/contact",
       element: <Contact/>,
+
+    },
+    {
+      path:"/restaurant/:id",
+      element: <CardMenu/>,
 
     },
       ],

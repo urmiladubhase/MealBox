@@ -10,6 +10,12 @@
 width: 120px;
 
 }
+a {
+  text-decoration: none;
+  color: black; /* Optional: set color */
+}
+
+
 .navItems > ul {
     display: flex;
 } 
@@ -85,4 +91,13 @@ width: 200px;
 height: 350px;
 margin: 5px;
 background-color:#f0f0f0;
+}
+
+.res-img-menu{
+
+    /*height: 144px;
+    width: 156px;
+    display:flex;
+    align-items: center;*/
+  margin: 10px 0;
 }

@@ -216,3 +216,28 @@ resList Data By me:
                     },
     
                 },
+
+
+
+                
+
+
+
+                //const {name, avgRating, costForTwo,cuisines, cloudinaryImageId} = menuItems?.cards[2]?.card?.card?.info;
+    const {name, avgRatingString, costForTwoMessage} = menuItems?.cards[2]?.card?.card?.info;
+    return menuItems === null ? <Shimmer/> : (
+        <div className="card-menu">
+            <h1>{name}</h1>
+            {/* <h2>{menuItems?.cards[2]?.card?.card?.info?.name}</h2> */}
+            <ul>
+                <li>{avgRatingString}</li>
+                <li>{costForTwoMessage}</li>
+                <li>{menuItems?.cards[2]?.card?.card?.info?.cuisines.join(", ")}</li>
+                
+                {/* <li>{cloudinaryImageId}</li>
+                <li>{avgRating}</li>
+                <li>{costForTwo}</li>
+                <li>{cuisines.join(", ")}</li> */}
+            </ul>
+        </div>
+    );
