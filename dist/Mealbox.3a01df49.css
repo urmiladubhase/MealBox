@@ -82,4 +82,13 @@ a {
 .res-img-menu {
   margin: 10px 0;
 }
+
+.user-card {
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+  padding: 10px;
+}
 /*# sourceMappingURL=MealBox.3a01df49.css.map */
