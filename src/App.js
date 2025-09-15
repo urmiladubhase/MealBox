@@ -5,7 +5,7 @@ import Body from "./components/Body.js"
 import { createBrowserRouter, RouterProvider, out, Outlet} from "react-router-dom";
 import { Contact } from "./components/Contact.js";
 import { Error } from "./components/Error.js";  
-import {About} from "./components/About.js";
+import About from "./components/About.js";
 import CardMenu from "./components/cardMenu.js";
 // import './style.css';
 
